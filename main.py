@@ -18,6 +18,7 @@ def steps_to_the_right(nums, steps):
 
     return nums + new_list
 
+
 def nine():
     cons = [
         { name: 'Peyton Turner', company: 'Walker Inc' },
@@ -33,3 +34,4 @@ def nine():
         output[company].append(consultant)
 
 print(nine())
+
