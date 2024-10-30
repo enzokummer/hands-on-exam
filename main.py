@@ -9,9 +9,6 @@ def seven():
     new_list.sort()
     return new_list
 
-<<<<<<< Updated upstream
-#print(seven())
-=======
 def steps_to_the_right(nums, steps):
     new_list = []
     for i in range(steps+1):
@@ -21,7 +18,12 @@ def steps_to_the_right(nums, steps):
 
     return nums + new_list
 
-def nine(cons):
+def nine():
+    cons = [
+        { name: 'Peyton Turner', company: 'Walker Inc' },
+        { name: 'Isaias Fritsch', company: 'Walker Inc' },
+        { name: 'Susana Wilderman', company: 'Nolan Inc' }
+    ]
     output = {}
     for consultant in cons:
         company = consultant["company"]
@@ -30,17 +32,4 @@ def nine(cons):
 
         output[company].append(consultant)
 
-#print(seven())
-
-#nums = [1,2,3,4,5,6,7]
-#print(steps_to_the_right(nums, 3))
-
-consultants = [
-{ name: 'Peyton Turner', company: 'Walker Inc' },
-{ name: 'Isaias Fritsch', company: 'Walker Inc' },
-{ name: 'Susana Wilderman', company: 'Nolan Inc' }
-]
-
-print(nine(consultants))
-
->>>>>>> Stashed changes
+print(nine())
