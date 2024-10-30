@@ -9,7 +9,8 @@ def seven():
     new_list.sort()
     return new_list
 
-#print(seven())
+question/8
+
 
 def steps_to_the_right(nums, steps):
     new_list = []
