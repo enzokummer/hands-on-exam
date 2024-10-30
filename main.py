@@ -33,5 +33,14 @@ def nine():
 
         output[company].append(consultant)
 
-print(nine())
+def ten(word):
+    #word.lower()
+    #word.replace(" ", "")
+    word = ''.join(char.lower() for char in word if char.isalnum())
+    for i in range(len(word)):
+        if word[i] != word[len(word)-i-1]:
+            return False
+    return True
 
+print(ten('madam'))
+print(ten('nurses run'))
