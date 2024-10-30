@@ -9,4 +9,18 @@ def seven():
     new_list.sort()
     return new_list
 
-#print(seven())
+question/8
+
+
+def steps_to_the_right(nums, steps):
+    new_list = []
+    for i in range(steps+1):
+        new_list.append(nums[i])
+    for i in range(steps+1):
+        nums.remove(nums[0])
+
+    return nums + new_list
+
+nums = [1,2,3,4,5,6,7]
+print(steps_to_the_right(nums, 3))
+
